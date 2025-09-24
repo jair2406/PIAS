@@ -6,6 +6,7 @@ header{
     background-color: rgb(31, 31, 31);
     display: flex;
     align-items: center;
+    text-align: center;
 }
 .trasso{
     color: whitesmoke;
@@ -13,7 +14,6 @@ header{
 }
 .logotipo{
     color: whitesmoke;
-    margin-left: 815px;
 }
 #produtos{
     height: auto;
@@ -23,26 +23,16 @@ header{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 .card{
     background-color: rgb(141, 141, 141);
+    transition: 0.3s ;
 }
 .card img{
     width: 300px;
     padding-top: 10px;
 }
-.compra{
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(155, 114, 0);
-    font-size: 25px;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: 0.5s ease;
-}
-.compra:hover{
-    background-color: rgb(126, 93, 1);
-    transform: scale(1.05);
-    
+.card:hover{
+    background-color: rgb(119, 119, 119);
 }
