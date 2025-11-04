@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #d9dbde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #868686, #7b7b7b);
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+}
+
+.esq {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem {
+  background: white;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.imagem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.imagem img {
+  width: 300px;
+  transform: rotate(-90deg);
+  object-fit: contain;
+}
+
+.titulo {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0f0f0f;
+  letter-spacing: 1px;
+}
+
+.butoes {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add, .compra {
+  background: #eaeaea;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.add:hover, .compra:hover{
+  transform: translateY(-3px);
+  background: #c1c1c1;
+}
+
+.corassao {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  translate: 0 -20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.corassao:hover {
+  transform: translateY(-3px);
+  color: rgb(163, 0, 0);
+}
