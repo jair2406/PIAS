@@ -54,6 +54,7 @@ main {
     height: 200px;
     width: 260px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .cardcor:hover {
@@ -77,4 +78,7 @@ main {
 .cardbugado3 img {
     width: 200px;
     margin-top: 19%;
+}
+a{
+    text-decoration: none;
 }
